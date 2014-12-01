@@ -25,7 +25,7 @@ begin
   dbms_output.put_line('My Password is '||v_password);
 end;
 ```
-You may also add some metadata information to the information you are encrypting if you so choose, with the following code example:
+You may also add some metadata information to help identify the record on the lookup table (optional), with the following code example:
 
 ### Extended Encryption procedure call with metadata 
 ```sql
