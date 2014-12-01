@@ -37,10 +37,11 @@ begin
                );
 end;
 ```
-Database Objects
----------------------
-There are a total of 5 database objects installed
 | Name | Description          |
 | ------------- | ----------- |
 | Help      | ~~Display the~~ help window.|
 | Close     | _Closes_ a window     |
+Database Objects
+---------------------
+There are a total of 5 database objects installed
+
