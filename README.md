@@ -41,6 +41,12 @@ Database Objects
 ---------------------
 The following database objects must be installed as part of this package:
 
+**Package(s)**
+
+| Name | Description          |
+| ------------- | ----------- |
+|NVE|Package that does all the actual encryption and storing/pulling of data.|
+
 **Table(s)**
 
 | Name | Description          |
@@ -64,9 +70,4 @@ The following database objects must be installed as part of this package:
 | ------------- | ----------- |
 |NVE_DATA_ITEM_SEQ|Used to produce primary key for NVE_DATA_ITEM_LKUP table|
 
-**Package(s)**
-
-| Name | Description          |
-| ------------- | ----------- |
-|NVE|Package that does all the actual encryption and storing/pulling of data.|
 
