@@ -37,7 +37,9 @@ begin
                );
 end;
 ```
-Tables
+Database Objects
+---------------------
+**Tables**
 
 | Name | Description          |
 | ------------- | ----------- |
@@ -45,9 +47,13 @@ Tables
 |NVE_DATA|Stores encrypted **Value** data|
 |NVE_KEY|Stores 16 bytes of the 32 byte key used to encrypt the **Value** data|
 
+**Sequence(s)**
+
 | Name | Description          |
 | ------------- | ----------- |
 |NVE_DATA_ITEM_SEQ|Used to produce primary key for NVE_DATA_ITEM_LKUP table|
+
+**Package(s)**
 
 | Name | Description          |
 | ------------- | ----------- |
