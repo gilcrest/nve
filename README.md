@@ -49,6 +49,14 @@ The following database objects must be installed as part of this package:
 |NVE_DATA|Stores encrypted **Value** data|
 |NVE_KEY|Stores 16 bytes of the 32 byte key used to encrypt the **Value** data|
 
+**Index(es)**
+| Name | Description          |
+| ------------- | ----------- |
+|UI1_NVE_DATA_ITEM_LKUP|Index on **Name** data on NVE_DATA_ITEM_LKUP table|
+|PK_NVE_DATA|Primary Key for NVE_DATA table|
+|PK_NVE_DATA_ITEM_LKUP|Primary Key for NVE_DATA_ITEM_LKUP table|
+|PK_NVE_KEY|Primary Key for NVE_KEY table|
+
 **Sequence(s)**
 
 | Name | Description          |
