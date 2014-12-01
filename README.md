@@ -39,7 +39,7 @@ end;
 ```
 Database Objects
 ---------------------
-**Tables**
+**Table(s)**
 
 | Name | Description          |
 | ------------- | ----------- |
