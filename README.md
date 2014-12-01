@@ -39,6 +39,8 @@ end;
 ```
 Database Objects
 ---------------------
+The following database objects must be installed as part of this package:
+
 **Table(s)**
 
 | Name | Description          |
