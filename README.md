@@ -16,7 +16,7 @@ The data will be persisted in 3 tables: a lookup for the **Name**, a table to st
 Retrieving the data is also very easy, take the following code as an example:
 
 ### Simple decryption function call
-```
+```sql
 set serveroutput on 
 declare
   v_password             varchar2(1000);
@@ -28,7 +28,7 @@ end;
 You may also add some metadata information to the information you are encrypting if you so choose, with the following code example:
 
 ### Extended Encryption procedure call with metadata 
-```
+```sql
 begin
   nve.encrypt (p_name => 'appPassword',
                p_value => 'superSecretPassword!',
@@ -41,10 +41,11 @@ Database Objects
 ---------------------
 There are a total of 5 database objects installed
 
-Tables
-:	NVE_DATA_ITEM_LKUP
-	> Stores the **Name**  as well as any optional metadata that you decide to give as input.   A sequence driven primary key is given to each record which is referenced by foreign keys in the other two tables.
-:   NVE_DATA
+- NVE_DATA_ITEM_LKUP
+    > Stores the **Name**  as well as any optional metadata that you decide to give as input.   A sequence driven primary key is given to each record which is referenced by foreign keys in the other two tables.
+
+- NVE_DATA
 	> Stores encrypted **Value** data
-:	NVE_KEY
+
+- NVE_KEY
 	> Stores 16 bytes of the 32 byte key used to encrypt the **Value** data
