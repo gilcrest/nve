@@ -25,3 +25,15 @@ begin
   dbms_output.put_line('My Password is '||v_password);
 end;
 ```
+You may also add some metadata information to the information you are encrypting if you so choose, with the following code example:
+
+### Extended Encryption procedure call with metadata 
+```
+begin
+  nve.encrypt (p_name => 'appPassword',
+               p_value => 'superSecretPassword!',
+               p_grouping_name => 'TEST GROUP',
+               p_usage_desc => 'This is the password for some external app that I need to call via pl/sql, but do not want to the password to be shown in cleartext as part of the query string that I am forming in the code'
+               );
+end;
+```
