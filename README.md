@@ -37,3 +37,14 @@ begin
                );
 end;
 ```
+Database Objects
+---------------------
+There are a total of 5 database objects installed
+
+Tables
+:	NVE_DATA_ITEM_LKUP
+	> Stores the **Name**  as well as any optional metadata that you decide to give as input.   A sequence driven primary key is given to each record which is referenced by foreign keys in the other two tables.
+:   NVE_DATA
+	> Stores encrypted **Value** data
+:	NVE_KEY
+	> Stores 16 bytes of the 32 byte key used to encrypt the **Value** data
