@@ -4,7 +4,7 @@ A PL/SQL framework to easily store and retrieve Name:Value pair Encrypted (NVE) 
 
 In it's simplest form, you are able to encrypt data with only the following code:
 
-### Simple encrypt call
+### Simple encryption call
 ```
 begin
   nve.encrypt ('applicationPassword','superSecretPassword!');
@@ -15,6 +15,7 @@ The data will be persisted in 3 tables: a lookup for the **Name**, a table to st
 
 Retrieving the data is also very easy, take the following code as an example:
 
+### Simple decryption call
 ```
 set serveroutput on 
 declare
