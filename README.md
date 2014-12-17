@@ -1,6 +1,6 @@
 Welcome to nve! (Name:Value Encryption)
 ========================
-A framework to easily store and retrieve Name:Value pair Encrypted (NVE) data using Oracle PL/SQL.  The goal of this project is to be able to easily persist sensitive information using the strongest encryption methods available.  This project uses Oracle's dbms_crypto package to do the actual encryption using the 256-bit AES algorithm with Cipher Block Chaining and PKCS#5 compliant padding.
+A utility to easily store and retrieve Name:Value pair Encrypted (NVE) data using Oracle PL/SQL.  The goal of this project is to be able to easily persist sensitive information using the strongest encryption methods available.  This project uses Oracle's dbms_crypto package to do the actual encryption using the 256-bit AES algorithm with Cipher Block Chaining and PKCS#5 compliant padding.
 
 In it's simplest form, you are able to encrypt data with only the following code:
 
