@@ -7,7 +7,7 @@ In it's simplest form, you are able to encrypt data with only the following code
 ### Simple encryption procedure call
 ```
 begin
-  nve.encrypt ('applicationPassword','superSecretPassword!');
+  nve.encrypt ('anyStringName','anyStringValue');
 end;
 ```
 
@@ -19,10 +19,10 @@ Retrieving the data is also very easy, take the following code as an example:
 ```sql
 set serveroutput on 
 declare
-  v_password             varchar2(1000);
+  v_decrypted_string             varchar2(1000);
 begin
-  v_password := nve.decrypt ('applicationPassword');
-  dbms_output.put_line('My Password is '||v_password);
+  v_decrypted_string := nve.decrypt ('anyStringName');
+  dbms_output.put_line('My decrypted string value is '||v_decrypted_string);
 end;
 ```
 You may also add some metadata information to help identify the record on the lookup table (optional), with the following code example:
@@ -30,10 +30,10 @@ You may also add some metadata information to help identify the record on the lo
 ### Extended Encryption procedure call with metadata 
 ```sql
 begin
-  nve.encrypt (p_name => 'appPassword',
-               p_value => 'superSecretPassword!',
+  nve.encrypt (p_name => 'anyStringName',
+               p_value => 'anyStringValue',
                p_grouping_name => 'TEST GROUP',
-               p_usage_desc => 'This is the password for some external app that I need to call via pl/sql, but do not want to the password to be shown in cleartext as part of the query string that I am forming in the code'
+               p_usage_desc => 'This is where you would put a longer description of what is being encrypted, etc.'
                );
 end;
 ```
