@@ -42,7 +42,7 @@ The key used in the dbms_crypto.encrypt for AES256 must be exactly 32 bytes.  Th
   * one 16 byte piece is written to the NVE_KEY table and the value is determined using `dbms_crypto.randombytes`.  This portion of the key is unique for every name:value pair record that is created
   * one 16 byte piece is taken from global variable `gv_salt_string` in the package body.  
 
-> Every implementation of this package should change the value in the **gv_salt_string** global variable with your own unique 16 byte string.  You should also "wrap" this package after you have completed this change in order to obfuscate the key.
+> ** IMPORTANT ** Every implementation of this package should change the value in the **gv_salt_string** global variable with your own unique 16 byte string.  You should also "wrap" this package after you have completed this change in order to obfuscate the key.
 
 Database Objects
 ---------------------
